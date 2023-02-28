@@ -7,7 +7,9 @@ import { Farm } from './../models/Farm'
 export class FarmService {
   constructor() {}
 
-  create(farm: Farm) {}
+  create(farm: Farm) {
+    
+  }
 
   read(id: number): Farm {
     return {} as any

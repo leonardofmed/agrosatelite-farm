@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BasemapComponent } from './basemap/basemap.component';
 import { FarmComponent } from './farm/farm.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NewFarmComponent } from './new-farm/new-farm.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BasemapComponent,
     FarmComponent,
     DashboardComponent,
+    NewFarmComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

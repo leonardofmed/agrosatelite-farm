@@ -30,7 +30,7 @@ npm run ng serve
 Run mocked backend:
 
 ```shell
-json-server src/assets/farm.json
+npx json-server --watch src/assets/farm.json
 ```
 
 ## Fulfill the user stories bellow
