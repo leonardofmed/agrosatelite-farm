@@ -1,6 +1,6 @@
 <div>
 
-    <!-- nome: "", 
+  <!-- nome: "", 
 		name: "string",
 		geomtry: "any",
 		area: 1,
@@ -9,36 +9,34 @@
 		owner: this.mockOnwer
     -->
 
-    <div>
-      <label for="name">
-        nome
-      </label>
-      <input id="name" type="text" [(ngModel)]="fazenda.name">
-    </div>
-  
-    <div>
-      <label for="address">
-        area
-      </label>
-      <input id="address" type="text" [(ngModel)]="fazenda.area">
-    </div>
-    
-  
-    <div>
-        <label for="address">
-            centroide
-        </label>
-        <input id="address" type="text" [(ngModel)]="fazenda.centroid">
-    </div>
-      
-  
-    <div>
-        <label for="address">
-            geometria
-        </label>
-        <input id="address" type="text" [(ngModel)]="fazenda.geomtry">
-    </div>
-  
-    <button class="button" (click)="onSubmit()">Salvar</button>
-  
+  <div>
+    <label for="name">
+      nome
+    </label>
+    <input id="name" type="text" [(ngModel)]="fazenda.name">
+  </div>
+
+  <div>
+    <label for="address">
+      area
+    </label>
+    <input id="address" type="text" [(ngModel)]="fazenda.area">
+  </div>
+
+  <div>
+    <label for="address">
+      centroide
+    </label>
+    <input id="address" type="text" [(ngModel)]="fazenda.centroid">
+  </div>
+
+  <div>
+    <label for="address">
+      geometria
+    </label>
+    <input id="address" type="text" [(ngModel)]="fazenda.geomtry">
+  </div>
+
+  <button class="button" (click)="onSubmit()">Salvar</button>
+
 </div>

@@ -94,12 +94,12 @@ Look the django-admin accessing *http://localhost:8000/admin* and use your super
 
 # Complete the Farm Project
 
-1. Add the following fields to the FARM model:
+~~1. Add the following fields to the FARM model:~~
     * Municipality
     * State
     * A relation between FARM and OWNER (one farm needs to have one and only one owner. The owner can have zero or many farms).
 
-2. Add restrictions so that it is not possible to create farms:
+~~2. Add restrictions so that it is not possible to create farms:~~
     * Without owner
     * Without municipality
     * Without state

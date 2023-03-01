@@ -1,21 +1,27 @@
 import { Injectable } from '@angular/core'
 import { Farm } from './../models/Farm'
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root',
+	providedIn: 'root',
 })
 export class FarmService {
-  constructor() {}
+	private apiUrl = 'http://localhost:8000/api/farms/';
 
-  create(farm: Farm) {
-    
-  }
+	constructor(
+		private http: HttpClient
+	) {}
 
-  read(id: number): Farm {
-    return {} as any
-  }
+	create(farm: Farm): Observable<Farm> {
+		return this.http.post<Farm>(this.apiUrl, farm);
+	}
 
-  list(): Farm[] {
-    return []
-  }
+	read(id: number): Observable<Farm> {
+		return this.http.get<Farm>(`${this.apiUrl}${id}/`);
+	}
+
+	list(): Observable<Farm[]> {
+		return this.http.get<Farm[]>(this.apiUrl);
+	}
 }

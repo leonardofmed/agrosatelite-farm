@@ -29,6 +29,11 @@ class Owner(models.Model):
 
     is_active = models.BooleanField(verbose_name=_("Is Active"), default=True)
 
+    # ManyToManyField field allows an owner to have zero or many farms.
+    # related_name attribute allows to specify the name of the reverse relation from the Farm model to the Owner model.
+    # Each Owner instance will have a related set of Farm instances accessible through the farms attribute
+    farms = models.ManyToManyField('Farm', related_name='owners', blank=True)
+
     def __str__(self):
         return str(self.name)
 
