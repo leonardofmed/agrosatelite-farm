@@ -8,6 +8,11 @@ from farm_base.models import Farm
 
 
 class FarmListSerializer(serializers.ModelSerializer):
+    # Retrieves the ID of the related Owner model using the source argument of the IntegerField serializer.
+    owner_id = serializers.IntegerField(source='owner.id')
+    municipality = serializers.CharField()
+    state = serializers.CharField()
+    
     def __init__(self, *args, **kwargs):
         super(FarmListSerializer, self).__init__(*args, **kwargs)
         request = kwargs['context']['request']
@@ -18,7 +23,7 @@ class FarmListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Farm
-        fields = ['id', 'name', 'centroid', 'area']
+        fields = ['id', 'name', 'owner_id', 'centroid', 'area', 'municipality', 'state']
         read_only_fields = ['id', 'centroid', 'area']
 
 

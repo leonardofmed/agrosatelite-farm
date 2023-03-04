@@ -105,7 +105,7 @@ Look the django-admin accessing *http://localhost:8000/admin* and use your super
     * Without state
     * Without name
 
-3. Make it possible to search a farm by:
+~~3. Make it possible to search a farm by:~~
     * The owner's name
     * The owner's document number/identification
     * The farm's name
@@ -113,10 +113,10 @@ Look the django-admin accessing *http://localhost:8000/admin* and use your super
     * State 
     * The ID of the farm.
 
-4. Edit the GET (details) of FARM so that it returns:
+~~4. Edit the GET (details) of FARM so that it returns:~~
     * All fields of the model
 
-5. Edit the GET (list) of FARM so that it returns:
+~~5. Edit the GET (list) of FARM so that it returns:~~
     * Name, owner id, centroid, area, municipality and state
 
 ## Hints
