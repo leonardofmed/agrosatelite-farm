@@ -35,17 +35,17 @@ npx json-server --watch src/assets/farm.json
 
 ## Fulfill the user stories bellow
 
-1. Implementar CRUD no serviço de fazenda (`service/farm.service.ts`) utilizando o back mockado (que é executado por padrão em `http://localhost:3000`).
+~~1. !Foi utilizado o servidor Django! Implementar CRUD no serviço de fazenda (`service/farm.service.ts`) utilizando o back mockado (que é executado por padrão em `http://localhost:3000`).~~
 
 ~~2. Na página inicial do sistema eu posso clicar sobre a opção 'Cadastrar' para cadastrar uma nova fazenda;~~
 
    ~~2.1 Ao clicar em 'Novo cadastro', devo ser redirecionado para uma nova rota com o componente que me permitirá cadastrar uma nova fazenda com os dados de nome da fazenda, área, centróide, geometria, e o id do dono.~~
 
-   2.2 Utilizar o serviço de fazenda para armazenar a fazenda no "back".
+   ~~2.2 Utilizar o serviço de fazenda para armazenar a fazenda no "back".~~
 
-3. Na página inicial do sistema eu posso ver o nome de todas as fazendas cadastradas (utilizar o list do serviço de fazenda).
+~~3. !Foi utilizado o servidor Django! Na página inicial do sistema eu posso ver o nome de todas as fazendas cadastradas (utilizar o list do serviço de fazenda).~~
 
-4. Ao clicar sobre o nome de uma fazenda devo ser redirecionado para a rota '/details' para ver todas as informações associadas a ela (nome, centróide e id do dono);
+~~4. Ao clicar sobre o nome de uma fazenda devo ser redirecionado para a rota '/details' para ver todas as informações associadas a ela (nome, centróide e id do dono);~~
 
    4.1. A rota /details deve receber como parâmetro o 'id' da fazenda;
 
